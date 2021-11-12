@@ -25,5 +25,10 @@ namespace revisionE2
         public string Modelo { get => modelo; set => modelo = value; }
         public double Precio { get => precio; set => precio = value; }
         public int Cantidad { get => cantidad; set => cantidad = value; }
+
+        public override string ToString()
+        {
+            return $"Venta realizada: {marca} {modelo}. {cantidad} unidades han sido vendidas. Total: ${precio*cantidad}.";
+        }
     }
 }
